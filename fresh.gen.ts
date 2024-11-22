@@ -4,6 +4,7 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $CepViaActionWithIsland from "./islands/CepViaActionWithIsland.tsx";
+import * as $ExtraIslandExample from "./islands/ExtraIslandExample.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -12,6 +13,7 @@ const manifest = {
   },
   islands: {
     "./islands/CepViaActionWithIsland.tsx": $CepViaActionWithIsland,
+    "./islands/ExtraIslandExample.tsx": $ExtraIslandExample,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

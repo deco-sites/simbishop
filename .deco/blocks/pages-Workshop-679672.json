@@ -20,6 +20,12 @@
       "section": {
         "__resolveType": "site/sections/Workshop/ExtraHTMXExample.tsx"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Workshop/ExtraIslandExample.tsx"
+      }
     }
   ],
   "seo": {

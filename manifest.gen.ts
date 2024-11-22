@@ -47,6 +47,7 @@ import * as $$$$$$29 from "./sections/Workshop/CepViaActionWithHTMX.tsx";
 import * as $$$$$$30 from "./sections/Workshop/CepViaActionWithIsland.tsx";
 import * as $$$$$$31 from "./sections/Workshop/CepViaLoader.tsx";
 import * as $$$$$$32 from "./sections/Workshop/ExtraHTMXExample.tsx";
+import * as $$$$$$33 from "./sections/Workshop/ExtraIslandExample.tsx";
 
 const manifest = {
   "loaders": {
@@ -90,6 +91,7 @@ const manifest = {
     "site/sections/Workshop/CepViaActionWithIsland.tsx": $$$$$$30,
     "site/sections/Workshop/CepViaLoader.tsx": $$$$$$31,
     "site/sections/Workshop/ExtraHTMXExample.tsx": $$$$$$32,
+    "site/sections/Workshop/ExtraIslandExample.tsx": $$$$$$33,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,
