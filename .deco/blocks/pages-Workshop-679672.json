@@ -1,0 +1,29 @@
+{
+  "name": "Workshop",
+  "path": "/workshop",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Workshop/CepViaLoader.tsx",
+      "cep": "18218-970"
+    },
+    {
+      "__resolveType": "site/sections/Workshop/CepViaActionNoIsland.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Workshop/CepViaActionWithIsland.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Workshop/CepViaActionWithHTMX.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Workshop/ExtraHTMXExample.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

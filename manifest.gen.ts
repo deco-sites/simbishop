@@ -4,6 +4,7 @@
 
 import * as $$$$$$$$$0 from "./actions/minicart/submit.ts";
 import * as $$$$$$$$$1 from "./actions/wishlist/submit.ts";
+import * as $$$$$$$$$2 from "./actions/workshop/searchCep.ts";
 import * as $$$$$$$$$$$0 from "./apps/deco/analytics.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/shopify.ts";
@@ -41,6 +42,11 @@ import * as $$$$$$24 from "./sections/Session.tsx";
 import * as $$$$$$25 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$26 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$27 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$28 from "./sections/Workshop/CepViaActionNoIsland.tsx";
+import * as $$$$$$29 from "./sections/Workshop/CepViaActionWithHTMX.tsx";
+import * as $$$$$$30 from "./sections/Workshop/CepViaActionWithIsland.tsx";
+import * as $$$$$$31 from "./sections/Workshop/CepViaLoader.tsx";
+import * as $$$$$$32 from "./sections/Workshop/ExtraHTMXExample.tsx";
 
 const manifest = {
   "loaders": {
@@ -79,10 +85,16 @@ const manifest = {
     "site/sections/Social/InstagramPosts.tsx": $$$$$$25,
     "site/sections/Social/WhatsApp.tsx": $$$$$$26,
     "site/sections/Theme/Theme.tsx": $$$$$$27,
+    "site/sections/Workshop/CepViaActionNoIsland.tsx": $$$$$$28,
+    "site/sections/Workshop/CepViaActionWithHTMX.tsx": $$$$$$29,
+    "site/sections/Workshop/CepViaActionWithIsland.tsx": $$$$$$30,
+    "site/sections/Workshop/CepViaLoader.tsx": $$$$$$31,
+    "site/sections/Workshop/ExtraHTMXExample.tsx": $$$$$$32,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,
     "site/actions/wishlist/submit.ts": $$$$$$$$$1,
+    "site/actions/workshop/searchCep.ts": $$$$$$$$$2,
   },
   "apps": {
     "site/apps/deco/analytics.ts": $$$$$$$$$$$0,
