@@ -72,9 +72,10 @@ const sdk = () => {
         const input = form?.querySelector<HTMLInputElement>(
           `[data-item-id="${itemId}"] input[type="number"]`,
         );
-        const item = getCart()?.items.find((item) =>
-          // deno-lint-ignore no-explicit-any
-          (item as any).item_id === itemId
+        const item = getCart()?.items.find(
+          (item) =>
+            // deno-lint-ignore no-explicit-any
+            (item as any).item_id === itemId,
         );
         if (!input || !item) {
           return false;
@@ -150,12 +151,15 @@ const sdk = () => {
         })
         : null;
       document.body.addEventListener("htmx:load", (e) =>
-        (e as unknown as {
-          detail: {
-            elt: HTMLElement;
-          };
-        })
-          .detail.elt.querySelectorAll("[data-event]").forEach((node) => {
+        (
+          e as unknown as {
+            detail: {
+              elt: HTMLElement;
+            };
+          }
+        ).detail.elt
+          .querySelectorAll("[data-event]")
+          .forEach((node) => {
             const maybeTrigger = node.getAttribute("data-event-trigger");
             const on = maybeTrigger === "click" ? "click" : "view";
             if (on === "click") {
@@ -195,10 +199,12 @@ const sdk = () => {
           console.error("Missing wishlist Provider");
           return false;
         }
-        form.querySelector<HTMLInputElement>('input[name="product-id"]')!
-          .value = productID;
-        form.querySelector<HTMLInputElement>('input[name="product-group-id"]')!
-          .value = productGroupID;
+        form.querySelector<HTMLInputElement>(
+          'input[name="product-id"]',
+        )!.value = productID;
+        form.querySelector<HTMLInputElement>(
+          'input[name="product-group-id"]',
+        )!.value = productGroupID;
         form.querySelector<HTMLButtonElement>("button")?.click();
         return true;
       },
@@ -256,9 +262,12 @@ interface Props {
   user?: Person | null;
   mode?: "eager" | "lazy";
 }
-export default function Session(
-  { minicart, wishlist, user, mode = "lazy" }: Props,
-) {
+export default function Session({
+  minicart,
+  wishlist,
+  user,
+  mode = "lazy",
+}: Props) {
   if (mode === "lazy") {
     return (
       <>
